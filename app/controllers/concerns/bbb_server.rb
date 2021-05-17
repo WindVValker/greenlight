@@ -56,7 +56,8 @@ module BbbServer
     join_opts[:join_via_html5] = true
     join_opts[:createTime] = room.last_session.to_datetime.strftime("%Q")
     join_opts["userdata-bbb_show_participants_on_login"] = false
-    join_opts["userdata-bbb_custom_style_url"] = "https://raw.githubusercontent.com/WindVValker/BBBcustom/main/custom.css"
+    join_opts["userdata-bbb_custom_style_url"] = "https://07868597914556708632.googlegroups.com/attach/177b0662ea36b/html5.css?part=0.1&view=1&vt=ANaJVrGxJTiTaW2Nbmx89aeoFy_zOiWPW_ozDQVaQEePNRkyS-j8FbFhYfzLZRbA7ka_OLUJGd_4nWmodJaFt53bdsCJ85lIjYG2Ra3Dfc4jFkwCD6XnH2k"
+    #join_opts["userdata-bbb_custom_style_url"] = "https://raw.githubusercontent.com/WindVValker/BBBcustom/main/custom.css"
 
     bbb_server.join_meeting_url(room.bbb_id, name, password, join_opts)
   end
