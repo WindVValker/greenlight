@@ -55,6 +55,7 @@ module BbbServer
     join_opts[:userID] = uid if uid
     join_opts[:join_via_html5] = true
     join_opts[:createTime] = room.last_session.to_datetime.strftime("%Q")
+    join_opts["userdata-bbb_show_participants_on_login"] = false
 
     bbb_server.join_meeting_url(room.bbb_id, name, password, join_opts)
   end
