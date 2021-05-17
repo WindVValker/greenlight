@@ -56,7 +56,7 @@ module BbbServer
     join_opts[:join_via_html5] = true
     join_opts[:createTime] = room.last_session.to_datetime.strftime("%Q")
     join_opts["userdata-bbb_show_participants_on_login"] = false
-    join_opts["userdata-bbb_custom_style_url"] = "https://github.com/WindVValker/BBBcustom/blob/main/custom.css"
+    join_opts["userdata-bbb_custom_style_url"] = https://raw.githubusercontent.com/WindVValker/BBBcustom/main/custom.css
 
     bbb_server.join_meeting_url(room.bbb_id, name, password, join_opts)
   end
